@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <div id="main" class="active"> 
+    <h1>STT Terpadu Nurul Fikri</h1>
+    <p>Kampus Technopreneur di Indonesia</p>
+    <img src="assets/img/foto zikel.jpeg" alt="Foto Ziqel" width="150">
+    
+     <ol>
+        <li> Juice
+         <ul>
+          <li>Mangga : 5.000</li>
+          <li>Durian : 8.000</li>
+          </ul>
+        </li>
+        <li> Nasi Goreng</li>
+         <ul>
+          <li>Tambahan Ayam : 18.000</li>
+          <li>Tambahan Sosis : 15.000</li>
+         </ul>
+     </ol>
+
+     <table>
+        <thead>
+             <tr>
+             <th>No</th>
+             <th>NIM</th>
+             <th>Nama Lengkap</th>
+              </tr>
+        </thead>
+        <tbody>
+             <tr>
+             <td>1</td>
+             <td>0110226007</td>
+             <td>Ziqel Azka Hartono</td>
+             </tr>
+             <tr>
+             <td>2</td>
+             <td>0110226002</td>
+             <td>Zulfa Zamain</td>
+            </tr>
+             <tr>
+             <td>3</td>
+             <td>0110226115</td>
+             <td> Yuga Indra Syahputra</td>
+            </tr>
+            <tr>
+             <td>4</td>
+             <td>0110226058</td>
+             <td> Wahyu Surya Pratama</td>
+            </tr>
+            <tr>
+             <td>5</td>
+             <td>0110226033</td>
+             <td> Zulfikar Syauki Nur</td>
+            </tr>
+            <tr>
+             <td>6</td>
+             <td>0110226115</td>
+             <td> Ziyad Akbar Fashani</td>
+            </tr>
+     </table border="1" cellpadding="8" cellspacing="0">
+     <form>
+        <input type="text" name="anak" placeholder="Nama Anak" />
+        <input type="number" name="umur" placeholder="Masukan Umur Balita" />
+         <textarea name="deskripsi" placeholder="Masukan Deskripsi Anak Anda"></textarea>
+        <input type="submit" value="Kirim" />
+     </form>
+ </div>
+
+</body>
+</html>
