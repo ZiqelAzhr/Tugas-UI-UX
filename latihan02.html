@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form Pemesanan Pizza</title>
+</head>
+
+<body>
+  <h1>Form Pemesanan Pizza</h1>
+  <p>
+    Silakan isi form pemesanan ini dengan lengkap dan benar.
+  </p>
+  <form action="hasil.html" method="get">
+    
+    <fieldset>
+      <legend>Informasi Pemesanan</legend>
+      
+      <p>
+        <label for="customername">Nama: </label>
+        <input type="text" id="customername" name="customername" required>
+      </p>
+      
+      <p>
+        <label for="address">Alamat: </label> 
+        <input type="text" id="address" name="address" required>
+      </p>
+      
+      <p>
+        <label for="telepon">Telepon: </label> 
+        <input type="tel" id="telepon" name="telepon" required>
+      </p>
+      
+      <p>
+        <label for="email">Email: </label> 
+        <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@gmail\.com$" required>
+      </p>
+      
+      <p>
+        <label for="instruction">Delivery Instruction:</label><br>
+        <textarea name="instruction" id="instruction" rows="4" cols="50" maxlength="400" placeholder="No more than 400 characters"></textarea>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Design Your Dream Pizza</legend>
+      <p><strong>Pizza Specs</strong></p>
+      <p>Pilih salah satu:</p>
+      
+      <p>
+        <input type="radio" id="classic" name="crust" value="classic white" required>
+        <label for="classic">Classic White</label><br>
+        
+        <input type="radio" id="thin" name="crust" value="thin crust">
+        <label for="thin">Thin Crust</label><br>
+        
+        <input type="radio" id="thick" name="crust" value="thick crust">
+        <label for="thick">Thick Crust</label>
+      </p>
+      
+      <p><strong>Topping</strong></p>
+      <p>
+        <input type="checkbox" id="top1" name="toppings" value="classic">
+        <label for="top1">Classic Cheese</label><br>
+      
+        <input type="checkbox" id="top2" name="toppings" value="pepperoni">
+        <label for="top2">Pepperoni</label><br>
+      
+        <input type="checkbox" id="top3" name="toppings" value="ayam" required>
+        <label for="top3">Ayam</label><br>
+      
+        <input type="checkbox" id="top4" name="toppings" value="mushrooms">
+        <label for="top4">Mushrooms</label>
+      </p>
+      
+      <p>
+        <label for="quantity">Quantity:</label> 
+        <select id="quantity" name="quantity" required>
+          <option value="">--Pilih Jumlah--</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </p>
+    </fieldset>
+    
+    
+    <p>
+      <button type="submit">Submit</button>
+      <input type="reset" value="Reset">
+    </p>
+
+  </form>
+
+</body>
+
+</html>
