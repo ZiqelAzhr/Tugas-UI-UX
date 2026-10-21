@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Pemesanan Barang</title>
+</head>
+<body>
+    <center>
+      <a href="#">Home</a> | 
+      <a href="#">Register</a> | 
+      <a href="#">Policy</a> | 
+     <a href="#">About</a>
+    </center>
+  <hr>
+  <form action="hasil02.html" method="get">
+    
+    <p>
+      [ Gambar Produk ]<br>
+      <input type="file" name="gambar_produk">
+    </p>
+
+    <center>
+      <label for="title">Title Here :</label>
+      <input type="text" id="title" name="title" value="MacBook Air £800">
+    </center>
+
+    <center>
+      <label for="description">Description :</label>
+      <textarea id="description" name="description" rows="4" cols="40">Year : 2009
+Model : 
+Condition : Mint</textarea>
+    </center>
+
+    <center>
+      <label for="account_number">Account Number :</label>
+      <input type="text" id="account_number" name="account_number" value="123456789">
+    </center>
+
+    <center>
+      <label for="bank">Bank :</label>
+      <select id="bank" name="bank">
+        <option value="HSBC">HSBC</option>
+        <option value="BJB">BJB</option>
+        <option value="BCA">BCA</option>
+        <option value="BTN">BTN</option>
+      </select>
+    </center>
+
+    <center>
+      <label for="account_holder">Account Holder :</label>
+      <input type="text" id="account_holder" name="account_holder" placeholder="Name Here">
+    </center>
+
+    <center>
+      <label for="transaction">Transaction :</label>
+      <input type="number" id="transaction" name="transaction" value="1" min="1"><br>
+      <small>* if the transaction is for 3 person, choose 3 from the drop-down list</small>
+    </center>
+
+    <center>
+      <input type="checkbox" id="check_mobile" name="notif_mobile" checked>
+      <label for="check_mobile">Send to Mobile Phone</label><br>
+      
+      <input type="checkbox" id="check_email" name="notif_email" checked>
+      <label for="check_email">Send to Email</label>
+    </center>
+
+    <center>
+      <label for="send_mobile">Send to Mobile Phone :</label>
+      <input type="number" id="send_mobile" name="send_mobile" value="0812345678">
+    </center>
+
+    <center>
+      <label for="send_email">Send to Email :</label>
+      <input type="email" id="send_email" name="send_email" value="ngetes@gmail.com">
+    </center>
+
+    <center>
+      <button type="submit">Generate Link</button>
+    </center>
+
+  </form>
+
+</body>
+</html>

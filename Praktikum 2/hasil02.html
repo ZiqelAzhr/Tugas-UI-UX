@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Hasil Pemesanan Barang</title>
+</head>
+<body>
+    <center>
+     <a href="#">Home</a> | 
+     <a href="#">Register</a> | 
+     <a href="#">Policy</a> | 
+     <a href="#">About</a>
+    </center>
+  <hr>
+  <form action="hasil.html" method="get">
+    
+   <p>
+      [Gambar Produk]
+   </p>
+
+   
+    <center>
+      <label>Title Here : </label>
+      <span id="val-title">MacBook Air £800</span>
+    </center>
+
+    <center>
+      <label>Description :</label><br>
+      <span id="val-desc" style="white-space: pre-line;">Year : 2009</span>
+    </center>
+
+    <center>
+      <label>Total Amount : </label>
+      <span>£800</span>
+    </center>
+
+    <center>
+      <label>Pay to : </label>
+      <span id="val-payto">123456789</span>
+    </center>
+
+    <center>
+      <label for="payment_type">Payment Type :</label>
+      <select id="payment_type" name="payment_type">
+        <option value="Cash">Cash</option>
+        <option value="Qris">Qris</option>
+        <option value="PayLater">PayLater</option>
+      </select>
+    </center>
+
+    <center>
+      <label for="acc_holder">Account Holder :</label>
+      <input type="text" id="acc_holder" name="acc_holder" placeholder="Name Here">
+    </center>
+
+    <center>
+      <label for="acc_no">Account No :</label>
+      <input type="text" id="acc_no" name="acc_no" value="123-456-789-0">
+    </center>
+
+    <center>
+      <input type="checkbox" id="cb_mobile" checked>
+      <label for="cb_mobile">Send to Mobile Phone</label><br>
+      
+      <input type="checkbox" id="cb_email" checked>
+      <label for="cb_email">Email me copy of transaction</label>
+    </center>
+
+    <center>
+      <label for="res_mobile">Send to Mobile Phone :</label>
+      <input type="text" id="res_mobile" name="res_mobile" value="1234567890, 1234567891">
+    </center>
+
+    <center>
+      <label for="res_email">Send to Email :</label>
+      <input type="text" id="res_email" name="res_email" value="mfmm2g13@soton.ac.uk, fys_06@yahoo.com">
+    </center>
+
+    <center>
+      <button type="submit">Pay using QuidLink</button>
+    </center>
+
+  </form>
+
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    
+    if(params.has('title')) {
+      document.getElementById('val-title').innerText = params.get('title');
+    }
+    if(params.has('description')) {
+      document.getElementById('val-desc').innerText = params.get('description');
+    }
+    if(params.has('account_number')) {
+      document.getElementById('val-payto').innerText = params.get('account_number');
+      document.getElementById('acc_no').value = params.get('account_number');
+    }
+    if(params.has('send_mobile')) {
+      document.getElementById('res_mobile').value = params.get('send_mobile');
+    }
+    if(params.has('send_email')) {
+      document.getElementById('res_email').value = params.get('send_email');
+    }
+  </script>
+
+</body>
+</html>
